@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <div class="background w-screen h-screen bg-gradient-to-r from-blue-800 to-purple-800">
+        <img src="assets/Transparent.png" alt="" class="w-[1px]">
+        <div class="to-do-list border w-[540px] mx-auto mt-[100px] mb-[20px] px-[30px] pt-[40px] pb-[70px] rounded-xl bg-white">
+            <h1 class="flex items-center text-3xl font-bold mb-[20px] ">To Do List 
+                <img src="assets/icon.png" alt="" class="w-[30px] ml-[10px]"></h1>
+            <div class="input-bar border flex items-center justify-between rounded-full pl-[25px] mb-[25px] bg-slate-100">
+                <input type="text" placeholder="Add a Task" class="flex-1 bg-transparent py-[10px] outline-none" id="addTask">
+                <button class="border px-[50px] py-[16px] rounded-full bg-orange-500 text-white " id="addTaskBtn">Add</button>
+            </div>
+            <ul id="taskList" class="relative">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
